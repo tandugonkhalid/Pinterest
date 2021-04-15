@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.carousel-inner img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-item,
+.carousel-item-active {
+  -webkit-transition: -webkit-transform 1.5s ease;
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+
+.carousel-header {
+  position: absolute;
+  z-index: 1;
+  color: rgba(44, 44, 44, 0.685);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 0.5rem;
+  width: 100vw;
+  top: 5%;
+}
+
+.carousel-header h1 {
+  margin: 15px 30px;
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.carousel-header a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carousel-header li:last-child {
+  padding-top: 0 !important;
+}
+
+#Products img {
+  width: 20rem;
+  height: 10rem;
+}
+/*# sourceMappingURL=admin.css.map */

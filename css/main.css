@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  padding: 30px !important;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: none;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.hero li a {
+  color: white;
+  letter-spacing: 0.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 13px;
+}
+
+.hero a {
+  text-decoration: none;
+}
+
+.hero li a:focus {
+  outline: none;
+}
+
+.hero li:last-child {
+  padding-top: 0 !important;
+}
+
+.hero .navbar-header {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.hero .navbar-header a {
+  text-decoration: none;
+  margin: 0 !important;
+  letter-spacing: 15px;
+  color: rgba(44, 44, 44, 0.685);
+}
+
+.hero .navbar-header a:focus {
+  outline: none;
+}
+
+.hero .navbar-header h3 {
+  overflow-y: hidden;
+}
+
+.hero .hero-title .text-uppercase {
+  letter-spacing: 1.5rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: thin;
+}
+
+.hero .hero-title {
+  height: 80vh;
+  overflow-y: hidden;
+}
+
+.hero .hero-title .btn {
+  font-size: 13px !important;
+  color: #e60000 !important;
+  letter-spacing: 0.5rem !important;
+  font-weight: bold;
+  margin-bottom: 23em;
+}
+
+.hero .hero-title .btn:focus {
+  outline: none;
+}
+
+.hero .hero-title .arrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.hero .hero-title .arrow a {
+  text-decoration: none;
+}
+
+.hero .hero-title .arrow a:focus {
+  outline: none;
+}
+
+.hero .hero-title .arrow img {
+  width: 80px;
+}
+
+.body {
+  padding: 3rem 1rem;
+}
+
+.body .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (0.5fr)[3];
+      grid-template-rows: repeat(3, 0.5fr);
+  gap: 1rem;
+}
+
+.body .grid .gourmet {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 3 / 3;
+  width: 63vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .gourmet p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem 3rem 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .gourmet::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 80%;
+  background-image: url("../images/blvck gourmet.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.body .grid .carhartt {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .carhartt p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .carhartt p:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.body .grid .carhartt::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 39%;
+  background-image: url("../images/carhartt.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.body .grid .adidas {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .adidas p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .adidas p:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.body .grid .adidas::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 39%;
+  background-image: url("../images/adidas.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.body .grid .tendeep {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .tendeep p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .tendeep p:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.body .grid .tendeep::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 39%;
+  background-image: url("../images/10deep.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.body .grid .palace {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 4 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .palace p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .palace p:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.body .grid .palace::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 39%;
+  background-image: url("../images/palace.jpeg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.body .grid .nike {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 4 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .grid .nike p {
+  color: white;
+  font-size: 28px;
+  margin: 0 2rem 3rem 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.body .grid .nike::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 39%;
+  background-image: url("../images/nike.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.hashtag {
+  overflow-y: hidden;
+}
+
+.hashtag .hashtag-bg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  height: 60vh;
+}
+
+.hashtag .hashtag-bg .first {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hashtag .hashtag-bg .first::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/nike1.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .second {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.hashtag .hashtag-bg .second::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/adidas1.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .third {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.hashtag .hashtag-bg .third::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/train.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .fourth {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.hashtag .hashtag-bg .fourth::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/clothes.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .fifth {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.hashtag .hashtag-bg .fifth::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/jordan.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .sixth {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.hashtag .hashtag-bg .sixth::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/woman.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .seventh {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.hashtag .hashtag-bg .seventh::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/yeezy.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .hashtag-bg .eighth {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.hashtag .hashtag-bg .eighth::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-image: url("../images/bikini.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.hashtag .tagline {
+  margin: -260px 0 150px 0;
+}
+
+.hashtag .tagline p {
+  letter-spacing: 1.5rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.footer .navbar-brand {
+  margin: 0 1rem !important;
+}
+
+.footer .nav-link {
+  margin: 0 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer .nav-item {
+  color: black;
+}
+
+.footer .nav-item:hover {
+  text-decoration: none;
+}
+
+.footer .navbar-link:focus {
+  outline: none;
+}
+
+.footer li {
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/login-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: -1;
+}
+
+.login-form {
+  height: 100vh;
+  background-color: transparent;
+}
+
+.login-form h1 {
+  color: white;
+  padding: 1em;
+  margin-right: 13rem;
+}
+
+.login-form form {
+  width: 60vh;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 20px;
+  color: white;
+}
+/*# sourceMappingURL=login.css.map */
